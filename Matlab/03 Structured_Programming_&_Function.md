@@ -1,4 +1,6 @@
-# 03 Structured_Programming_&_Function
+# 03 Structured_Programming_&_Function 
+
+# 结构化编程与功能
 
 ## Contents
 
@@ -20,27 +22,26 @@
 
 右键菜单 smart ident 自动缩进
 
-### Script Flow
+### Script Flow 程序流？
 
-通常程序自上而下运行
+通常程序自上而下运行，接近于流 即 Flow 的状态（吗
 
-Structured programming
+Structured programming, 即结构化编程，这里指通过子程序、循环、条件等等结构使程序整洁。下列 Flow Control 即是程序的实现。
 
-### Flow Control 指令
+#### Flow Control 指令
 
-$$
-\begin{matrix}
-\textup{Operator}  &  \textup{Meaning}\\
-if, elseif, else  & Execute\ statements\ if\ condition\ is\ true\\
-for  & Execute\ statements\ specified\ number\ of\ times\\
->\\
->=\\
-==\\
-~=  &  不等于\\
-\&\& & 和\\
-||  &  或
-\end{matrix}
-$$
+|         Operator         |                        Meaning                         |
+| :----------------------: | :----------------------------------------------------: |
+|     if, elseif, else     |        Execute statements if condition is true         |
+|           for            |      Execute statements specified number of times      |
+| switch, case,  otherwise |      Execute one of several groups of statements       |
+|        try, catch        |     Execute statements and catch resulting errors      |
+|          while           | Repeat execution of statements while condition is true |
+|          break           |        Terminate execution of for or while loop        |
+|         continue         |  Pass control to next iteration of for or while loop   |
+|           end            | Terminate block of code, or indicate last array index  |
+|          pause           |               Halt execution temporarily               |
+|          return          |          Return control to invoking function           |
 
 
 
