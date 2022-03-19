@@ -25,11 +25,23 @@
 
 ### Embedding Functions
 
+函数可以嵌套使用，将多行代码写到一行
+
 ### Variables
+
+变量在使用之前不需要声明
+
+`=` 赋值运算符
+
+区分大小写
 
 ### Numeric Variable (Data) Type
 
+<img src="C:\Users\25408\AppData\Roaming\Typora\typora-user-images\image-20220318123001714.png" alt="image-20220318123001714" style="zoom:50%;" />
+
 #### Special Variables and Constants
+
+一些特殊符号的表示
 
 ### MATLAB Calling Priority
 
@@ -42,9 +54,20 @@ $$
 
 ### Numeric Display “Format”
 
+数字的数据类型
+
 ### Command Line Terminal 命令行终端
 
+在命令的结尾加上；使其不输出结果
+
+$\uparrow$ 显示历史命令
+
 #### Some Useful Functions
+
+- `clc`: clear command window display
+- `clear`: remove all variables in the workspace
+- `who`: variables in the workspace
+- `whos`: variable information of the workspace
 
 ## Array (Vector and Matrix)
 
