@@ -12,6 +12,8 @@
 
 ### MATLAB Programming Modes
 
+MATLAB有两种程序运行模式：
+
 - Command line (in command window) 命令行
 - Scripts (.m files) 脚本
 

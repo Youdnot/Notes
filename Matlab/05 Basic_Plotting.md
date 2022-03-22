@@ -44,7 +44,9 @@ Text with mathematical expression using <u>LaTex</u>. `$$...$$`
 
 字体，字体大小，线宽，坐标范围等（tick指坐标轴上坐标点垂直突出的一小段线）
 
-#### Graphical Objects 图形的各个组成部分
+#### Graphical Objects
+
+#### 图形的各个组成部分
 
 ![image-20220319130159626](C:\Users\25408\AppData\Roaming\Typora\typora-user-images\image-20220319130159626.png)
 
