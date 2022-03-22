@@ -114,3 +114,5 @@ Any form of signal processing for which the input  is an image.
 #### Image Rotation `imrotate()`
 
 #### Write Image `imwrite()`
+
+- 储存为不同格式
