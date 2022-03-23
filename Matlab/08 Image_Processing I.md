@@ -8,9 +8,7 @@
 - Read and show images
 - Image arithmetic  图像计算
 
-## Digital Image and Its Acquisition 
-
-## 数字影像及其获取
+## Digital Image and Its Acquisition 数字影像及其获取
 
 传感器摄取 CMOS？
 
