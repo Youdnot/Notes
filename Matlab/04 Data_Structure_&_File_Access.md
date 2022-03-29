@@ -2,8 +2,8 @@
 
 ## Contents
 
-- Variables: string, structure, cell
-- Data access
+- Variables: string, structure, cell  变量类型：字符，结构，细胞
+- Data access  数据获取
 
 ## Variables: string, structure, cell
 
@@ -11,19 +11,18 @@
 
 默认为 double 
 
-int后的数字表示位数（8为8-bit）
+int 后的数字表示位数（8为8-bit）
 
 ### Character
 
-字符使用ASCII码表示
+- 用ASCII码
 
-使用 `''` 创建字符
-
-<img src="C:\Users\25408\AppData\Roaming\Typora\typora-user-images\image-20220318124114370.png" alt="image-20220318124114370" style="zoom:50%;" />
+- `''` 创建字符
+- <img src="C:\Users\25408\AppData\Roaming\Typora\typora-user-images\image-20220318124114370.png" alt="image-20220318124114370" style="zoom:50%;" />
 
 ### String
 
-多个字元
+多个字符，即字符串
 
 ```matlab
 %An array collects characters:
@@ -50,10 +49,10 @@ str(11000100) = 'z'
 
 ### Structure
 
-- A method of storing heterogeneous data 一种储存<u>异值</u>数据的方法
+- A method of storing heterogeneous data  一种储存<u>异值</u>数据的方法
 - Structures contain arrays called fields 
 
-EG：
+e.g.:
 
 ![image-20220318125412422](C:\Users\25408\AppData\Roaming\Typora\typora-user-images\image-20220318125412422.png)
 

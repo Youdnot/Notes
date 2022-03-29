@@ -49,15 +49,14 @@ threshold 门槛？
 - Built-in connected-component labeling algorithm
 - 输出名为`labeled`的矩阵
 
-### Color-coding Objects `label2rgb()`
+### Color-coding Objects: `label2rgb()`
 - Converts a label matrix into an RGB color image
   - 用色彩标号/color coded 
 - Visualize the labeled regions
 
-### Object Properties `regionprops` 
+### Object Properties: `regionprops` 
 - Provide a set of properties for each connected component
 
-### Interactive Selection `bwselect`
+### Interactive Selection: `bwselect`
 - Let you select objects using the mouse
-
 
