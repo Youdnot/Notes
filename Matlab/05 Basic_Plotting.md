@@ -7,16 +7,18 @@
 
 ## Basics
 
-MATLAB有着十分强劲的绘图引擎，可以生成广泛类型的图表。
+MATLAB有着十分强劲的绘图引擎，可以生成广泛类型的图表。但MATLAB不能理解函数
 
-## Plot from “Data”
+### Plot from “Data”
 
-matlab不能理解函数
+Strategies:
 
-1. Generate the numeric values of a function over a  specific range
-2. Display the data “points” in a graphical way
+1. Generate the numeric values of a function over a  specific range  收集函数在特定区间的数值
+2. Display the data “points” in a graphical way  用图像方法将数据点展示
 
 ## `plot()`
+
+[二维线图 - MATLAB plot - MathWorks 中国](https://ww2.mathworks.cn/help/matlab/ref/plot.html?s_tid=doc_ta)
 
 未规定坐标时，横纵坐标数就是点的数量
 
@@ -83,4 +85,4 @@ Be careful when using the `gcf` handle where  there exists multiple figures.
 - Figure Position and Size 图像尺寸
 - Several Plots in One Figure `subplot(m, n,1); `
 - Control of Grid, Box, and Axis 指令参考
-- Saving Figures into Files 保存
+- Saving Figures into Files 保存=
