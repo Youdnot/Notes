@@ -1,6 +1,10 @@
 # Notes
 
-This is the note repository that stores my note.
+本项目主要是储存个人以`.md`文件为主的笔记，兼有部分课程的Slides。
+
+内容主要为章节目录以及简要的拓充，十分简陋。
+
+目前分类并不完善
 
 
 
