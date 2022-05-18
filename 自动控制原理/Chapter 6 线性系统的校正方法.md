@@ -24,6 +24,19 @@ U~BE~
 
 
 
+
+
 ## 拓展
+
+### 提高相位裕度的两种方法
+
+- 书
+- PPT
+
+
+
+固定$\displaystyle \frac{1}{\alpha T}$，即固定Ω，$\displaystyle \frac{1}{T}$右移
+
+
 
 [信噪比_百度百科 (baidu.com)](https://baike.baidu.com/item/信噪比/206685)
