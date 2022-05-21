@@ -201,3 +201,75 @@ $$
 \end{matrix}
 $$
 
+
+
+
+
+## 拓展
+
+### 使用`Mermaid`语法绘制程序框图
+
+#### `flowchart`
+
+- 线形不够整齐
+- 标注方式是否能放在直线上？
+- 线方正？
+
+```mermaid
+flowchart LR
+A((origin))-->|Rs| B((1))
+B -->|Es| C[G1s]
+C -->|2| D((2))
+D --> E[G2s]
+E -->|Cs| F((output))
+E --> G[Hs]
+G -->|Bs| B
+```
+
+#### `stateDiagram`
+
+- 点的定义？
+- 方向修改
+
+
+```mermaid
+stateDiagram-v2
+[*] --> G1(s)
+G1(s) --> [*]
+[*] --> G2(s)
+N1(s) --> [*]
+[*] --> [*]
+[*] --> [*]
+[*] --> [*]
+```
+
+#### 流程图
+
+~~~mermaid
+```flow
+flowchat
+  st=>start: Start
+  op=>operation: Your Operation
+  cond=>condition: Yes or No?
+  e=>end
+  st->op->cond
+  cond(yes)->e
+  cond(no)->op
+​```
+~~~
+
+[(1条消息) 【已解决】markdown使用mermaid绘制流程图，报错[Expecting ‘open_directive’, ‘NEWLINE‘, ‘SPACE‘, ‘GRAPH‘, got ‘ALPHA‘\]_木木归来的博客-CSDN博客](https://blog.csdn.net/cc920095705/article/details/113769741)
+
+#### 参考资料：
+
+[mermaid-js/mermaid: Generation of diagram and flowchart from text in a similar manner as markdown (github.com)](https://github.com/mermaid-js/mermaid)
+
+[Mermaid，就像用 Markdown 码字一样，高效制作简易流图 - 少数派 (sspai.com)](https://sspai.com/post/63055#!)
+
+[(5条消息) Mermaid 实用教程_平头某的博客-CSDN博客_mermaid](https://blog.csdn.net/fenghuizhidao/article/details/79440583)
+
+[(5条消息) Markdown里面使用mermaid画流程图（基础）_Subson的博客-CSDN博客_markdown 画图](https://blog.csdn.net/Subson/article/details/78054689?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1-78054689-blog-79440583.pc_relevant_scanpaymentv1&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1-78054689-blog-79440583.pc_relevant_scanpaymentv1&utm_relevant_index=1)
+
+[(1条消息) Markdown里面的流程图_Subson的博客-CSDN博客_idea markdown 流程图](https://blog.csdn.net/Subson/article/details/75126945)
+
+[(5条消息) Mermaid画图教程（一）_CofCai的博客-CSDN博客_mermaid画图](https://blog.csdn.net/weixin_44360592/article/details/109526990)
