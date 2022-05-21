@@ -145,13 +145,59 @@ $$
 
 ### 2.5.3 梅森增益公式及运用
 
+任意两个节点之间传递函数的梅森增益公式为
+$$
+\begin{equation}
+G(s)=\frac{1}{\Delta} \sum_{k=1}^{n} P_{\mathrm{k}} \Delta_{\mathrm{k}}
+\end{equation}
+$$
+
+- 式中，$\Delta$——特征式，其计算公式为
+
+- $$
+  \begin{equation}
+  \Delta=1-\sum L_{\mathrm{a}}+\sum L_{\mathrm{b}} L_{\mathrm{c}}-\sum L_{\mathrm{d}} L_{\mathrm{e}} L_{\mathrm{f}}+\cdots
+  \end{equation}
+  $$
+
+- $\sum L_a$——信号流图中所有单独回路的增益之和；
+
+- $\sum L_bL_c$——所有两两互不接触回路的回路增益乘积之和；
+
+- $\sum L_dL_eL_f$——所有互不接触回路中，每次取其中三个回路增益的乘积之和；
+
+- $n$——从输入节点到输出节点间前向通路的条数；
+
+- $P_k$——从输入节点到输出节点间第k条前向通路的总增益；
+
+- $\Delta_k$——第k条前向通路的余子式，即把特征式$\Delta $中与该前向通路相接触回路的回路增益置为零后所余下的部分。
+
 ## 2.6 闭环系统的传递函数
 
 ### 2.6.1 闭环系统的开环传递函数
 
+$$
+G(s)H(s)=\frac{B(s)}{E(s)}=G_1(S)G_2(s)H(s)
+$$
+
 ### 2.6.2 闭环系统的闭环传递函数
+
+$$
+\begin{matrix}
+闭环传递函数  &  令N(s)=0  &  \displaystyle \Phi(s)=\frac{C(s)}{R(s)}=\frac{G_1(S)G_2(s)}{1+G_1(S)G_2(s)H(s)}  \\
+输出对扰动作用的传递函数  &  令R(s)=0  &  \displaystyle \Phi_n(s)=\frac{C(s)}{N(s)}=\frac{G_2(s)}{1+G_1(S)G_2(s)H(s)}  \\
+系统的总输出  &  根据叠加定理联立上述两式  &  \displaystyle C(s)=\frac{G_1(S)G_2(s)R(s)}{1+G_1(S)G_2(s)H(s)}+\frac{G_2(S)N(s)}{1+G_1(S)G_2(s)H(s)}
+\end{matrix}
+$$
 
 ### 2.6.3 闭环系统的误差传递函数
 
-
+$$
+\begin{matrix}
+误差传递函数  &  令N(s)=0  &  \displaystyle \Phi_e(s)=\frac{E(s)}{R(s)}=\frac{1}{1+G_1(S)G_2(s)H(s)}  \\
+扰动误差传递函数  &  令R(s)=0  &  \displaystyle \Phi_{en}(s)=\frac{E(s)}{N(s)}=\frac{-G_2(s)H(s)}{1+G_1(S)G_2(s)H(s)}  \\
+在控制和扰动同时作用下系统的总误差  &  联立上述两式  &  \displaystyle E(s)=\frac{R(s)}{1+G_1(S)G_2(s)H(s)}+\frac{-G_2(S)H(s)N(s)}{1+G_1(S)G_2(s)H(s)}  \\
+特征多项式  &  四种传函的分母多项式  &  1+G(s)H(s)=0  
+\end{matrix}
+$$
 
