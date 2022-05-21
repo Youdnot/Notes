@@ -214,16 +214,17 @@ $$
 - 线形不够整齐
 - 标注方式是否能放在直线上？
 - 线方正？
+- `(` `)` 等特殊符号可以通过用`"` `"` 括起整段文字打出
 
 ```mermaid
 flowchart LR
 A((origin))-->|Rs| B((1))
-B -->|Es| C[G1s]
+B -->|Es| C["G(1s)"]
 C -->|2| D((2))
-D --> E[G2s]
-E -->|Cs| F((output))
-E --> G[Hs]
-G -->|Bs| B
+D --> E["G(2s)"]
+E -->|"C(s)"| F((output))
+E --> G["H(s)"]
+G -->|"B(s)"| B
 ```
 
 #### `stateDiagram`
