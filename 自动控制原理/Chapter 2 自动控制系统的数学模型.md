@@ -28,9 +28,7 @@
 
 ## 2.1 引言
 
-- 传递函数是基于拉氏变换获得的复数域数学模型。
-
-- 控制系统的数学模型是描述系统输入变量、输出变量以及内部各变量之间关系的数学表达式。
+- 控制系统的**数学模型**是描述系统输入变量、输出变量以及内部各变量之间关系的数学表达式
 
 - 数学模型应具有：相似性、准确性和简化性
 
@@ -174,6 +172,8 @@ $$
 
 ## 2.6 闭环系统的传递函数
 
+<img src="C:\Users\25408\Documents\GitHub\Notes\自动控制原理\P2_40.drawio.svg" alt="P2_40.drawio" style="zoom:67%;" />
+
 ### 2.6.1 闭环系统的开环传递函数
 
 $$
@@ -208,6 +208,9 @@ $$
 ## 拓展
 
 ### 使用`Mermaid`语法绘制程序框图
+
+- 可以直接以文本形式在.md文件内渲染，不用将图片上传图床
+- 没有符合程序框图的样式
 
 #### `flowchart`
 
@@ -274,3 +277,9 @@ flowchat
 [(1条消息) Markdown里面的流程图_Subson的博客-CSDN博客_idea markdown 流程图](https://blog.csdn.net/Subson/article/details/75126945)
 
 [(5条消息) Mermaid画图教程（一）_CofCai的博客-CSDN博客_mermaid画图](https://blog.csdn.net/weixin_44360592/article/details/109526990)
+
+### 使用`draw.io`画图
+
+- 简单
+- 可以保存并直接修改`.svg`文件，导出格式多样全面
+- 图片嵌入需要上传图床
