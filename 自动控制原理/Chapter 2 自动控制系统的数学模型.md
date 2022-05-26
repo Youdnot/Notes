@@ -172,7 +172,9 @@ $$
 
 ## 2.6 闭环系统的传递函数
 
-<img src="C:\Users\25408\Documents\GitHub\Notes\自动控制原理\P2_40.drawio.svg" alt="P2_40.drawio" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Youdnot/Note_imgs/20ead760ad94e6ced551ad6ba82b59867d86cacb/P2_40.drawio.svg" alt="img" style="zoom:80%;" />
+
+
 
 ### 2.6.1 闭环系统的开环传递函数
 
