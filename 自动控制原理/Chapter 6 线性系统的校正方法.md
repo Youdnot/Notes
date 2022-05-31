@@ -40,3 +40,24 @@ U~BE~
 
 
 [信噪比_百度百科 (baidu.com)](https://baike.baidu.com/item/信噪比/206685)
+
+### 波特图的画法
+
+对数坐标
+
+[(40 封私信 / 53 条消息) 对数坐标轴的绘制规则？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/51904331)
+
+[(40 封私信 / 53 条消息) 如何理解「对数」？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/26097157/answer/121067428)
+
+[(5条消息) 使用Matlab定制伯德图坐标纸_是yc的博客-CSDN博客_bode图坐标纸](https://blog.csdn.net/m0_46524285/article/details/117092639)
+
+[(5条消息) Bode Plots by Hand 徒手绘制波特图_JasonLeaster的博客-CSDN博客](https://blog.csdn.net/cinmyheart/article/details/26759659)
+
+
+
+### 计算器解方程
+
+[fx-991CN X方程（组）求解功能的使用 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/28795401)
+
+
+
