@@ -182,7 +182,7 @@ $$
 
 ## 2.6 闭环系统的传递函数
 
-<img src="https://raw.githubusercontent.com/Youdnot/Notes/266a0b3af16df1bdbcbbe1eb0d918c3190ced49c/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/P2_40.drawio.svg" alt="img" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Youdnot/Notes/94a83ec4df424809b46581696de47417fcf79340/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/Pic/P2_40.drawio.svg" alt="img" style="zoom:80%;" />
 
 ### 2.6.1 闭环系统的开环传递函数
 
@@ -211,7 +211,7 @@ $$
 \end{matrix}
 $$
 
-
+<img src="https://github.com/Youdnot/Notes/blob/main/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/Pic/%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B.png?raw=true" alt="控制系统的数学模型.png" style="zoom: 67%;" />
 
 
 
