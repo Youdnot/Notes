@@ -49,11 +49,25 @@
 
 ## 3.2 一阶系统的时域分析
 
-3.2.1 一阶系统的数学模型
+### 3.2.1 一阶系统的数学模型
 
-3.2.2 一阶系统的单位阶跃响应
+$$
+\Phi(s)=\frac{C(s)}{R(S)}=\frac{1}{Ts+1}
+$$
 
-3.2.3 一阶系统的单位脉冲响应
+### 3.2.2 一阶系统的单位阶跃响应
+
+$$
+\begin{matrix}
+t_r=2.20T\\
+t_s=3T\\
+t_p不存在\\
+\sigma 不存在\\
+e_{ss}不存在
+\end{matrix}
+$$
+
+### 3.2.3 一阶系统的单位脉冲响应
 
 3.2.4 一阶系统的单位斜坡响应
 
@@ -61,13 +75,43 @@
 
 ## 3.3 二阶系统的时域分析
 
-3.3.1 二阶系统的数学模型
+### 3.3.1 二阶系统的数学模型
 
-3.3.2 二阶系统的单位阶跃响应
+$$
+\Phi(s)=\frac{C(s)}{R(S)}=\frac{1}{LCs^2+RCs+1}=\frac{\omega_n^2}{s^2+2\zeta\omega_ns+\omega_n^2}
+$$
 
-3.3.3 欠阻尼二阶系统的动态过程分析
+- **自然频率**：$\displaystyle\omega_n=\frac{1}{\sqrt{LC}}$ ，单位$rad/s$ 
+- 二阶系统的**阻尼比**：$\displaystyle\zeta=\frac{2}{R}\sqrt{\frac{C}{L}}$，量纲为$1$ 
 
-3.3.4 过阻尼二阶系统的动态性能指标
+### 3.3.2 二阶系统的单位阶跃响应
+
+### 3.3.3 欠阻尼二阶系统的动态过程分析
+
+$$
+\begin{matrix}
+\displaystyle t_r=\frac{\pi-\beta}{\omega_d}=\frac{\pi-\arccos{\zeta}}{\omega_n\sqrt{1-\zeta^2}}\\
+\displaystyle t_p=\frac{\pi}{\omega_d}=\frac{\pi}{\omega_n\sqrt{1-\zeta^2}}\\
+\displaystyle \sigma=e^{-\pi\zeta/\sqrt{1-\zeta^2}}\\
+\displaystyle \zeta=\frac{ln(\frac{1}{\sigma})}{\sqrt{\pi^2+\ln{\frac{1}{\sigma}^2}}}\\
+\displaystyle t_s=\frac{3.5}{\zeta\omega_n}
+\end{matrix}
+$$
+
+
+
+### 3.3.4 过阻尼二阶系统的动态性能指标
+
+- 单位阶跃响应时，
+
+$$
+\begin{matrix}
+\displaystyle t_r\approx\frac{1+1.5\zeta+\zeta^2}{\omega}\\
+t_s=4.75T_1(T_1=T_2)\\
+t_p不存在\\
+\sigma 不存在
+\end{matrix}
+$$
 
 3.3.5 二阶系统的单位脉冲响应
 
@@ -119,31 +163,50 @@
 
 ### 3.6.2 参考输入作用下的稳态误差 $e_{ssr}$ 
 
-1. 终值定理法
+1. #### 终值定理法
 
-2. 静态误差系数法
+   1. 判断系统稳定性
+
+   2. 求误差传递函数
+
+   3. 用终值定理求稳态误差
+
+2. #### 静态误差系数法
 
    1. 系统型别
+
+      - $$
+        G(S)H(S)=\frac{K\prod_{i=1}^{m}(\tau s+1)}{s^\nu \prod_{j=1}^{n-\nu }(T_j s+1)}
+        $$
+
+        
 
    2. 利用静态误差系数求取典型输入信号下系统的稳态误差
 
       - $$
+        e_{ssr}=\lim_{s\rightarrow 0}s\Phi_e(s)R(s)
+        $$
+   
+        
+      - $$
         \begin{matrix}
-        静态位置误差系数&K_p=lim_{s\rightarrow 0}G(s)H(s)=lim_{s\rightarrow 0}\frac{K}{s^\gamma}\\
-        静态速度误差系数&K_v=lim_{s\rightarrow 0}sG(s)H(s)=lim_{s\rightarrow 0}\frac{K}{s^{\gamma-1}}\\
-        静态加速度误差系数&K_a=lim_{s\rightarrow 0}s^2G(s)H(s)=lim_{s\rightarrow 0}\frac{K}{s^{\gamma-2}}
+        阶跃输入&静态位置误差系数&K_p=lim_{s\rightarrow 0}G(s)H(s)=lim_{s\rightarrow 0}\frac{K}{s^\gamma}&e_{ssr}=\frac{A}{1+K_p}\\
+        斜坡输入&静态速度误差系数&K_v=lim_{s\rightarrow 0}sG(s)H(s)=lim_{s\rightarrow 0}\frac{K}{s^{\gamma-1}}&e_{ssr}=\frac{A}{K_v}\\
+        加速度输入&静态加速度误差系数&K_a=lim_{s\rightarrow 0}s^2G(s)H(s)=lim_{s\rightarrow 0}\frac{K}{s^{\gamma-2}}&e_{ssr}=\frac{A}{K_a}
         \end{matrix}
         $$
       - 适用条件
-      
+   
         - 系统必须稳定
         - 误差按输入端定义
         - 只能用于计算典型输入时的终值误差，并且输入信号不能有其他的前馈通道
-      
-      
-      
-      
+   
 
 ### 3.6.3 扰动输入作用下的稳态误差 $e_{ssn}$ 
 
+- 只能使用终值定理法进行计算
+
 ### 3.6.4 改善系统稳态性能的措施
+
+- 开环增益和积分环节分布在回路的任何位置，对于减小或消除r(t)作用下的稳态误差均有效
+- 只有分布在前向通道的主反馈口到干扰作用点之间的增益和积分环节才对减小或消除干扰作用下的稳态误差有效
