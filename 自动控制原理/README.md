@@ -9,3 +9,5 @@
 北京航空航天大学出版社
 
 ISBN 978-7-5124-2707-5
+
+[自动控制原理（第3版） (豆瓣) (douban.com)](https://book.douban.com/subject/30850116/)
