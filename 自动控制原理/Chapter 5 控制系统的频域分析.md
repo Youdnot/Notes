@@ -94,8 +94,8 @@ $$
 
    - $$
       \begin{matrix}
-      &\gamma=180\degree+\angle{G(j\omega_g)H(j\omega_g)}\\
-      系统截止频率\omega_c满足:&A(\omega_c)=\left |G(j\omega_g)H(j\omega_g)\right |=1
+      &\gamma=180\degree+\angle{G(j\omega_c)H(j\omega_c)}\\
+      系统截止频率\omega_c满足:&A(\omega_c)=\left |G(j\omega_c)H(j\omega_c)\right |=1
       \end{matrix}
       $$
 
@@ -110,4 +110,39 @@ $$
 ### 5.5.2 稳定裕度的计算及举例运用
 
 - 将系统的开环幅相频率特性用实部和虚部表示，令虚部等于$0$，求出相位穿越频率$\omega_c$，代入实部求出与实轴的交点坐标
-- 根据系统的相频特性$\varphi(\omega_g)=-180\degree$，用试探法求出相位穿越频率$\omega_c$ 
+- 根据系统的相频特性$\varphi(\omega_g)=-180\degree$，用试探法求出相位穿越频率$\omega_c$ （可以利用计算器解方程zhi'jie
+
+
+
+
+
+## 拓展
+
+### 提高相位裕度的两种方法
+
+- 书
+- PPT
+
+
+
+固定$\displaystyle \frac{1}{\alpha T}$，即固定Ω，$\displaystyle \frac{1}{T}$右移
+
+
+
+### 波特图的画法
+
+对数坐标
+
+[(40 封私信 / 53 条消息) 对数坐标轴的绘制规则？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/51904331)
+
+[(40 封私信 / 53 条消息) 如何理解「对数」？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/26097157/answer/121067428)
+
+[(5条消息) 使用Matlab定制伯德图坐标纸_是yc的博客-CSDN博客_bode图坐标纸](https://blog.csdn.net/m0_46524285/article/details/117092639)
+
+[(5条消息) Bode Plots by Hand 徒手绘制波特图_JasonLeaster的博客-CSDN博客](https://blog.csdn.net/cinmyheart/article/details/26759659)
+
+
+
+### 计算器解方程
+
+[fx-991CN X方程（组）求解功能的使用 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/28795401)
