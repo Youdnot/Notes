@@ -38,7 +38,7 @@
 
   - 实验法 / 系统辨识
 
-  - **解析法** 重点
+  - **解析法**
 
 ## 2.2 控制系统的时域数学模型
 
@@ -71,10 +71,18 @@ $$
   $$
   
 
-##### 两种标准形式
+#### 两种标准形式
 
 - 首1标准型，又称零极点式
 - 尾1标准型，又称时间常数式
+
+#### 特点
+
+1. 是复变量s的有理真子式
+2. 分母多项式等于零，即系统的特征方程
+3. 只取决于系统的结构和参数
+4. 与系统的微分方程一一对应
+5. 传递函数的拉氏反变换即系统的脉冲响应函数
 
 ### 2.3.2 典型环节的传递函数
 
@@ -83,12 +91,12 @@ $$
 
 $$
 \begin{matrix}
-比例环节  &  \displaystyle G(s)=\frac{C(S)}{R(S)}=K\\
-积分环节  &  \displaystyle G(s)=\frac{C(S)}{R(S)}=\frac{1}{Ts}\\
-惯性环节  &  \displaystyle G(s)=\frac{C(S)}{R(S)}=\frac{1}{Ts+1}\\
-微分环节  &  \displaystyle 理论:G(s)=\frac{C(S)}{R(S)}=Ts  &  \displaystyle 实际:G(s)=\frac{C(S)}{R(S)}=\frac{Ts}{Ts+1}\\
-震荡环节  &  \displaystyle G(s)=\frac{C(S)}{R(S)}=\frac{1}{T^2s^2+2\xi Ts+1}=\frac{\omega_n^2}{s^2+2\xi \omega_ns+1}  &  \xi 为阻尼比，\omega_n为无阻尼振荡频率\\
-滞后环节  &  \displaystyle G(s)=\frac{C(S)}{R(S)}=e^{-\tau s}
+比例环节(放大)&  \displaystyle G(s)=\frac{C(S)}{R(S)}=K\\
+积分环节(无差)&  \displaystyle G(s)=\frac{C(S)}{R(S)}=\frac{1}{Ts}\\
+惯性环节(周期)&  \displaystyle G(s)=\frac{C(S)}{R(S)}=\frac{1}{Ts+1}\\
+微分环节(超前)&  \displaystyle 理论:G(s)=\frac{C(S)}{R(S)}=Ts  &  \displaystyle 实际:G(s)=\frac{C(S)}{R(S)}=\frac{Ts}{Ts+1}\\
+震荡环节&  \displaystyle G(s)=\frac{C(S)}{R(S)}=\frac{1}{T^2s^2+2\xi Ts+1}=\frac{\omega_n^2}{s^2+2\xi \omega_ns+\omega_n^2}  &  \xi 为阻尼比，\omega_n=\frac{1}{T}为无阻尼振荡频率\\
+滞后环节(延迟)&  \displaystyle G(s)=\frac{C(S)}{R(S)}=e^{-\tau s}
 \end{matrix}
 $$
 
@@ -114,17 +122,24 @@ $$
 
 #### 五种典型情况
 
-- 串联环节，$G(s)=\prod G_i(s)$ 
-- 并联环节，$G(s)=\sum G_i(s)$ 
-- 反馈环节，$\displaystyle \Phi(s)=\frac{C(s)}{R(s)}=\frac{G(s)}{1\pm G(s)H(s)}$，其中`+`表示负反馈，`-`表示正反馈
-- 比较点移动
-- 引出点移动
+$$
+\begin{matrix}
+串联环节&G(s)=\prod G_i(s)\\
+并联环节&G(s)=\sum G_i(s)\\
+反馈环节&\displaystyle \Phi(s)=\frac{C(s)}{R(s)}=\frac{G(s)}{1\pm G(s)H(s)}
+&\displaystyle \frac{前向通道传函}{1+开环传递函数}，其中+表示负反馈，-表示正反馈\\
+比较点移动\\
+引出点移动
+\end{matrix}
+$$
 
 #### 注意
 
 - 典型连接方式可以直接使用公式化简
 - **相邻的相同点**（比较点或引出点）之间**可以互相交换位置或合并**
 - **相邻的不同点**（比较点和引出点）之间**不允许交叉移动**
+- 相互交叉的支路拉开
+- 重叠的支路分开
 - 重点是**解环**
 
 ## 2.5 控制系统信号流图
@@ -183,6 +198,8 @@ $$
 ## 2.6 闭环系统的传递函数
 
 <img src="https://raw.githubusercontent.com/Youdnot/Notes/94a83ec4df424809b46581696de47417fcf79340/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/Pic/P2_40.drawio.svg" alt="img" style="zoom:80%;" />
+
+$R(s)$表示控制输入信号，$N(s)$表示干扰信号，$C(s)$表示系统输出，$E(s)$表示误差信号
 
 ### 2.6.1 闭环系统的开环传递函数
 
