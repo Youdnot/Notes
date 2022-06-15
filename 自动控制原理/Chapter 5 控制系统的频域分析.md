@@ -103,6 +103,9 @@ $$
      相位穿越频率\omega_g满足:&\varphi (\omega_g)=\angle{G(j\omega_g)H(j\omega_g)}=-180\degree
      \end{matrix}
      $$
+   
+     - 物理意义：对于闭环稳定系统，如果系统的开环增益再**放大$K_g$倍**，则系统将处于临界稳定状态
+   
 
 2. #### 相位裕度
 
@@ -112,7 +115,10 @@ $$
       系统截止频率\omega_c满足:&A(\omega_c)=\left |G(j\omega_c)H(j\omega_c)\right |=1
       \end{matrix}
       $$
-
+      
+   
+     - 物理意义：对于闭环稳定系统，如果系统的开环相频特性**再滞后$\gamma\degree$**，则系统将处于临界稳定状态
+   
 3. #### 截止频率$\omega_c$的计算
 
    1. 按分段描述的方法写成对数幅频特性曲线的渐进方程表达式
