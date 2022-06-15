@@ -43,9 +43,14 @@
 
 ## 3.1 控制系统的时域性能指标
 
-3.1.1 典型输入信号
+### 3.1.1 典型输入信号
 
-3.1.2 控制系统的时域性能指标
+- 单位阶跃函数、单位脉冲函数、单位斜坡函数、单位加速度函数
+
+### 3.1.2 控制系统的时域性能指标
+
+- 动态：上升时间、峰值时间tp、调节时间ts、超调量、延迟时间td
+- 稳态：稳态误差
 
 ## 3.2 一阶系统的时域分析
 
@@ -67,24 +72,38 @@ e_{ss}不存在
 \end{matrix}
 $$
 
-### 3.2.3 一阶系统的单位脉冲响应
+3.2.3 一阶系统的单位脉冲响应
 
 3.2.4 一阶系统的单位斜坡响应
 
 3.2.5 一阶系统的单位加速度响应
+
+### 总结
+
+#### 一阶系统的特性
+
+- 系统对输入信号微分的响应等于系统对该输入信号响应的微分
+- 系统对输入信号积分的响应等于系统对该输入信号响应的积分
+- 这一特性适用于任何阶线性定常系统
 
 ## 3.3 二阶系统的时域分析
 
 ### 3.3.1 二阶系统的数学模型
 
 $$
-\Phi(s)=\frac{C(s)}{R(S)}=\frac{1}{LCs^2+RCs+1}=\frac{\omega_n^2}{s^2+2\zeta\omega_ns+\omega_n^2}
+\Phi(s)=\frac{C(s)}{R(s)}=\frac{1}{LCs^2+RCs+1}=\frac{\omega_n^2}{s^2+2\zeta\omega_ns+\omega_n^2}
 $$
 
 - **自然频率**：$\displaystyle\omega_n=\frac{1}{\sqrt{LC}}$ ，单位$rad/s$ 
 - 二阶系统的**阻尼比**：$\displaystyle\zeta=\frac{2}{R}\sqrt{\frac{C}{L}}$，量纲为$1$ 
 
 ### 3.3.2 二阶系统的单位阶跃响应
+
+1. 欠阻尼
+2. 临界阻尼
+3. 过阻尼
+
+以下分别讨论三种情况动态性能指标测算的方法：
 
 ### 3.3.3 欠阻尼二阶系统的动态过程分析
 
@@ -93,7 +112,7 @@ $$
 \displaystyle t_r=\frac{\pi-\beta}{\omega_d}=\frac{\pi-\arccos{\zeta}}{\omega_n\sqrt{1-\zeta^2}}\\
 \displaystyle t_p=\frac{\pi}{\omega_d}=\frac{\pi}{\omega_n\sqrt{1-\zeta^2}}\\
 \displaystyle \sigma=e^{-\pi\zeta/\sqrt{1-\zeta^2}}\\
-\displaystyle \zeta=\frac{ln(\frac{1}{\sigma})}{\sqrt{\pi^2+\ln{\frac{1}{\sigma}^2}}}\\
+\displaystyle \zeta=\sqrt{\frac{(ln\sigma)^2}{\pi^2+(ln\sigma)^2}}\\
 \displaystyle t_s=\frac{3.5}{\zeta\omega_n}
 \end{matrix}
 $$
@@ -151,7 +170,8 @@ $$
    2. 出现全零行
       - 用上一行的系数构造一个辅助方程$F(s)=0$，并对辅助方程的$s$求导，其导数方程的系数代替全零行的元素
 3. 应用
-   - 移动坐标轴线的求解
+   - 移动坐标轴线的求解（要求$s=a$)
+     - 将$s=z+a(a=常数)$代入系统特征方程，写出$z$变量的新多项式，应用劳斯判据即可
 
 ## 3.6 控制系统的稳态误差
 
@@ -169,17 +189,23 @@ $$
 
    2. 求误差传递函数
 
+      - $$
+        \Phi_e(s)=\frac{1}{1+G(s)H(s)}
+        $$
+
    3. 用终值定理求稳态误差
+
+      - $$
+        e_{ssr}=\lim_{s\rightarrow 0}sE(s)=\lim_{s\rightarrow 0}s\Phi_e(s)R(s)=\lim_{s\rightarrow 0}s\frac{R(s)}{1+G(s)H(s)}
+        $$
 
 2. #### 静态误差系数法
 
    1. 系统型别
 
       - $$
-        G(S)H(S)=\frac{K\prod_{i=1}^{m}(\tau s+1)}{s^\nu \prod_{j=1}^{n-\nu }(T_j s+1)}
+        G(S)H(S)=\frac{K\prod_{i=1}^{m}(\tau s+1)}{s^\nu \prod_{j=1}^{n-\nu }(T_j s+1)}，尾一标准型
         $$
-
-        
 
    2. 利用静态误差系数求取典型输入信号下系统的稳态误差
 
@@ -187,7 +213,6 @@ $$
         e_{ssr}=\lim_{s\rightarrow 0}s\Phi_e(s)R(s)
         $$
    
-        
       - $$
         \begin{matrix}
         阶跃输入&静态位置误差系数&K_p=lim_{s\rightarrow 0}G(s)H(s)=lim_{s\rightarrow 0}\frac{K}{s^\gamma}&e_{ssr}=\frac{A}{1+K_p}\\
@@ -196,10 +221,12 @@ $$
         \end{matrix}
         $$
       - 适用条件
-   
+      
         - 系统必须稳定
         - 误差按输入端定义
         - 只能用于计算典型输入时的终值误差，并且输入信号不能有其他的前馈通道
+      
+   3. 输入信号为多种典型函数的组合时，可根据线性叠加原理求解
    
 
 ### 3.6.3 扰动输入作用下的稳态误差 $e_{ssn}$ 
