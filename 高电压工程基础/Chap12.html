@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"第12章 暂时过电压","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"12.1 工频电压升高","children":[{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"12.1.1 超高压系统中工频电压升高的重要性","children":[{"type":"list_item","depth":3,"payload":{"lines":[6,7],"index":1},"content":"1. 工频电压升高的数值是决定保护电器工作条件的主要依据"},{"type":"list_item","depth":3,"payload":{"lines":[7,8],"index":2},"content":"2. 工频电压的升高直接影响操作过电压的幅值"},{"type":"list_item","depth":3,"payload":{"lines":[8,9],"index":3},"content":"3. 对设备绝缘及其运行性能有重大影响"}]},{"type":"heading","depth":2,"payload":{"lines":[10,11]},"content":"12.1.2 工频电压升高的原因","children":[{"type":"list_item","depth":3,"payload":{"lines":[12,13],"index":1},"content":"1. 空载长线的电容效应"},{"type":"list_item","depth":3,"payload":{"lines":[13,14],"index":2},"content":"2. 不对称短路引起的工频电压升高"},{"type":"list_item","depth":3,"payload":{"lines":[14,15],"index":3},"content":"3. 突然甩负荷引起的工频电压升高"}]},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"12.1.3 工频电压升高的限制措施","children":[{"type":"list_item","depth":3,"payload":{"lines":[18,19]},"content":"情况及规定","children":[{"type":"list_item","depth":4,"payload":{"lines":[19,20]},"content":"在一般情况下，220kV及以下的电网中不需要采取特殊措施来限制工频电压升高"},{"type":"list_item","depth":4,"payload":{"lines":[20,21]},"content":"我国规定：330kV、500kV、750kV 系统，母线上的暂时工频过电压不超过最高工作相电压的 1.3 倍，线路不超过 1.4 倍"}]},{"type":"list_item","depth":3,"payload":{"lines":[21,22]},"content":"限制措施","children":[{"type":"list_item","depth":4,"payload":{"lines":[22,23]},"content":"利用并联电抗器补偿空载线路的电容效应"},{"type":"list_item","depth":4,"payload":{"lines":[23,24]},"content":"利用静止补偿器补偿限制工频过电压"},{"type":"list_item","depth":4,"payload":{"lines":[24,25]},"content":"采用良导体地线降低输电线路的零序阻抗"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[26,27]},"content":"12.2 谐振过电压","children":[{"type":"heading","depth":2,"payload":{"lines":[28,29]},"content":"12.2.1 谐振的类型","children":[{"type":"list_item","depth":3,"payload":{"lines":[30,31]},"content":"线性谐振"},{"type":"list_item","depth":3,"payload":{"lines":[31,32]},"content":"铁磁谐振"},{"type":"list_item","depth":3,"payload":{"lines":[32,33]},"content":"参数谐振"}]},{"type":"heading","depth":2,"payload":{"lines":[34,35]},"content":"12.2.2 铁磁谐振过电压","children":[{"type":"heading","depth":3,"payload":{"lines":[36,37]},"content":"基波铁磁谐振的特点","children":[{"type":"list_item","depth":4,"payload":{"lines":[38,39],"index":1},"content":"1. 产生串联铁磁谐振的必要条件是：电感和电容的伏安特性必须相交"},{"type":"list_item","depth":4,"payload":{"lines":[39,40],"index":2},"content":"2. 对铁磁谐振电路，在同一电源电动势的作用下，回路可能不知有一种稳定工作状态"},{"type":"list_item","depth":4,"payload":{"lines":[40,41],"index":3},"content":"3. 铁磁元件的非线性是产生铁磁谐振的根本原因"}]},{"type":"heading","depth":3,"payload":{"lines":[42,43]},"content":"限制措施","children":[{"type":"bullet_list","depth":4,"payload":{"lines":[44,46]},"content":"","children":[{"type":"list_item","depth":5,"payload":{"lines":[44,45]},"content":"设法改变回路参数，破坏谐振条件，接入阻尼电阻，以限制谐振过电压"}]},{"type":"ordered_list","depth":4,"payload":{"lines":[46,51],"startIndex":1},"content":"","children":[{"type":"list_item","depth":5,"payload":{"lines":[46,47],"index":1},"content":"1. 改善电磁式互感器激磁特性，或改用电容式电压互感器"},{"type":"list_item","depth":5,"payload":{"lines":[47,48],"index":2},"content":"2. 在电压互感器开口三角绕组中接入阻尼电阻，或在电压互感器一次绕组的中性点对地接入电阻"},{"type":"list_item","depth":5,"payload":{"lines":[48,49],"index":3},"content":"3. 有些情况下，可在 10kV 及以下的母线上装设一组三相对地电容器，或用电缆段代替架空线段，以增大对地电容，从参数搭配上避免谐振"},{"type":"list_item","depth":5,"payload":{"lines":[49,50],"index":4},"content":"4. 特殊情况下，临时改变系统中性点接地方式，或投入某些线路或设备，以改变参数，消除谐振过电压"}]}]}]}]}]},{})</script>
+</body>
+</html>
