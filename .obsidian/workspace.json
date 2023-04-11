@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "0261c0b4d5969ed3",
+    "type": "split",
+    "children": [
+      {
+        "id": "0405285759a74e7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc0691bce503c614",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "电力系统分析/复习思考题下.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d7f0e8b1a232caff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "电力系统分析/复习思考题下.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fbf8eb882e53ec32",
+    "type": "split",
+    "children": [
+      {
+        "id": "553b0b2737011304",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a62ac35a6f7d853f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b434dd3125b969d1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "aac44768dfea7c29",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ad09b4d9356b987d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c3c05059fa25bbc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfc7ded13e6c873a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "电力系统分析/复习思考题下.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "14b3e4feb566d483",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "电力系统分析/复习思考题下.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "32bdb3e52e95a869",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f9627b7ac016f673",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "电力系统分析/复习思考题下.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "bc0691bce503c614",
+  "lastOpenFiles": [
+    "电力系统分析/复习思考题.md",
+    "电力系统分析/复习思考题下.md",
+    "电力系统分析/复习思考题.assets/图5-11_同步电机相量图 .svg",
+    "电力系统分析/复习思考题.assets/同步电机稳态运行相量图-lightmode.drawio.svg",
+    "电力系统分析/复习思考题.assets/同步电机稳态运行相量图-darkmode.drawio.svg",
+    "电力系统分析/电分上题型.jpg"
+  ]
+}
